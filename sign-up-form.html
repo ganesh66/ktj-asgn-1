@@ -18,13 +18,33 @@
             background-color: #E0282A
         }  
         .logo-container{
-            background-color: #E0282A
+            background-color: #E0282A;
         }  
         .tab-container{
-            padding:70px 40px 70px 40px;
+            padding-top: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .input-box{
+            padding: 15px 10px 15px 10px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            margin-top:20px;  
+            box-shadow: 0 2px 2px 0 rgba(46, 60, 73, 0.05);
+            box-sizing: border-box;
         }
         .padded-tab-container{
-            max-width: 620px;
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 40px;
+            background-color:white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .form-container{
+            max-width: 350px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -34,26 +54,25 @@
         <div class="logo-container"><div class="logo"><img src="ktjlogo.png" height="100%" width="100%"></div></div>
         <div class="tab-container">
             <div class="padded-tab-container">
-                <div>
-                    <div>
-                        <span>SIGN UP</span>
-                        <span><a href="login-form">LOG IN</a></span>
-                    </div>
+                <div class="form-container">
+                    <div>Create your account</div>
                 <form>
                     <div>
-                        <input type="text" placeholder="First Name*">
-                        <input type="text" placeholder="Last Name*">
+                        <input type="text" placeholder="First Name*" class="input-box" style="width: 100%;">
+                        <input type="text" placeholder="Last Name*" class="input-box" style="width: 100%;">
                     </div>
-                    <div><input type="email" placeholder="Email address*"></div>
-                    <div><textarea placeholder="Address*"></textarea></div>
-                    <div>
+                    <div><input type="email" placeholder="Email address*" class="input-box" style="width: 100%;"></div>
+                    <div><input type="password" placeholder="Password*" class="input-box" style="width: 100%;"></div>
+                    <div><textarea placeholder="Address*" class="input-box" style="width: 100%;"></textarea></div>
+                    <div style="margin-top:20px;">
                         <input type="radio" name="gender" value="m"><span>Male</span>
                         <input type="radio" name="gender" value="f"><span>Female</span>
                     </div>
-                    <div>
-                    <span>Enter your DoB:</span><input type="date">
+                    <div style="margin-top:20px;">
+                    <span>Enter your DoB:</span><div><input type="date" style="width: 100%;"></div>
                     </div>
-                    <input type="submit" placeholder="click me">
+                    <button style="width: 100%;">Sign Up</button>
+                    <div>By signing up, you agree to our <a href="#">Terms of Use</a>and <a href="#">Privacy Policy</a>.</div>
                 </form>
                 </div>
             </div>
